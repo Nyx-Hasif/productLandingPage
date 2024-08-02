@@ -1,0 +1,156 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+    position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+main{
+  padding-top: 100px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+img {
+  border: 1px solid black;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+  user-select: none;
+  border: 1px solid black;
+}
+
+.card:hover {
+  border: 5px solid black;
+}
+
+#contact {
+  height: 20vh;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  text-align: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  padding: 5px;
+  width: 50%;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: yellow;
+  color: red;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+#email {
+  width: 20%;
+  height: 30px;
+}
+
+#submit {
+  max-width: 10%;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #email {
+    width: 50%;
+  }
+
+  #submit {
+    max-width: 50%;
+  }
+
+}
